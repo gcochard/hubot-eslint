@@ -1,0 +1,23 @@
+{
+  "name": "hubot-eslint",
+  "version": "1.0.0",
+  "description": "Give hubot a javascript file to lint with eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcochard/hubot-eslint.git"
+  },
+  "keywords": [
+    "hubot-scripts",
+    "eslint"
+  ],
+  "author": "Greg Cochard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcochard/hubot-eslint/issues"
+  },
+  "homepage": "https://github.com/gcochard/hubot-eslint"
+}
