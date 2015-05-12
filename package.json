@@ -1,6 +1,6 @@
 {
   "name": "hubot-eslint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Give hubot a javascript file to lint with eslint",
   "main": "index.js",
   "scripts": {
