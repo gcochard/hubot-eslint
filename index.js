@@ -13,7 +13,7 @@
 
 var url = require('url');
 var got = require('got');
-var defaultConfig = 'https://github.com/eslint/eslint/blob/master/conf/eslint.json';
+var defaultConfig = 'https://raw.githubusercontent.com/eslint/eslint/master/conf/eslint.json';
 var config, formatter, cli;
 got(defaultConfig,function(conf_err,conf_data,conf_res){
   conf_data = JSON.parse(conf_data);
@@ -25,7 +25,7 @@ got(defaultConfig,function(conf_err,conf_data,conf_res){
 });
 
 module.exports = function(robot){
-  robot.respond(/lint ([\w.]+)/i,function(msg){
+  robot.respond(/lint ((https?:\/\/)[^ ]+)/i,function(msg){
     var filename = msg.match[1];
     var uri = url.parse(filename);
     if(!config){
